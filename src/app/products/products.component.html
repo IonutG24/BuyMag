@@ -1,0 +1,10 @@
+<div id="container">
+  <div *ngFor="let food of allProducts.foods">
+    <product-card [item]="food"></product-card>
+  </div>
+
+  <div *ngFor="let stuff of allProducts.stuffs">
+    <product-card [item]="stuff"></product-card>
+  </div>
+
+</div>

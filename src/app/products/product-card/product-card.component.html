@@ -1,0 +1,10 @@
+<div class="productCard">
+  <div class="image"><img [src]="item.url" alt="{{ item.name }}" /></div>
+  <div class="type" *ngIf="item.taste">TYPE EXIST</div>
+  <div class="rating">Rating: {{ item.reviews.star }} stars</div>
+  <div class="productName">{{ item.name }}</div>
+  <div class="stock" *ngIf="item.stock > 10; else lastProducts">in stock</div>
+  <ng-template #lastProducts>last products</ng-template>
+  <div class="price">{{ item.price }} {{ item.currency }}</div>
+  <div class="addToBasket">Adauga in cos</div>
+</div>

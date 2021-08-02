@@ -1,0 +1,10 @@
+#container {
+  width: 50%;
+  border: 1px solid black;
+  margin: auto;
+  display: flex;
+  column-gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
